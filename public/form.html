@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Postal Rate Form</title>
+</head>
+<body>
+	<form action="/getRate" method="get">
+		Input Package Information: <br><br>
+		Weight: <input type="number" name="weight">(oz.)<br><br>
+		Type: 
+		<select name="mail_type">
+			<option value="stamped">Letters (Stamped)</option>
+			<option value="metered">Letters (Metered)</option>
+			<option value="flats">Large Envelopes (Flats)</option>
+			<option value="retail">First-Class Package Service (Retail)</option>
+		</select>
+		<br><br>
+		<input type="submit" value="Calculate">
+	</form>
+</body>
+</html>
